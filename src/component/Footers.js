@@ -30,6 +30,7 @@ function Footers() {
             target="_blank"
             rel="noreferrer"
             style={{ marginLeft: "10px" }}
+            key={data.id}
           >
             <img src={data.src} alt={data.name} />
           </a>

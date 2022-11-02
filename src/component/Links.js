@@ -9,33 +9,33 @@ export default function Links() {
       link_id: "btn_twitter",
     },
     {
-      id: 1,
+      id: 2,
       Title: "Zuri Team",
       link: "https://training.zuri.team/",
       link_id: "btn__zuri",
     },
     {
-      id: 1,
+      id: 3,
       Title: "Zuri Books",
       link: "http://books.zuri.team",
       link_id: "books",
     },
     {
-      id: 1,
+      id: 4,
       Title: "Python Books",
-      link: "https://background.zuri.team",
+      link: "https://books.zuri.team/python-for-beginners?ref_id=felixawoyale",
       link_id: "book__python",
     },
     {
-      id: 1,
+      id: 5,
       Title: "Background Check for Coders",
-      link: "https://books.zuri.team/design-rules ",
+      link: "https://background.zuri.team",
       link_id: "pitch",
     },
     {
-      id: 1,
+      id: 6,
       Title: "Design Books",
-      link: "",
+      link: "https://books.zuri.team/design-rules ",
       link_id: "book__design",
     },
   ];
@@ -48,6 +48,7 @@ export default function Links() {
             className="links"
             target="_blank"
             rel="noreferrer"
+            key={data.id}
           >
             <div key={data.id} id={data.link_id} className="link-box">
               <h6>{data.Title}</h6>
