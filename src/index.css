@@ -2,9 +2,13 @@
 
 body {
   margin: 0;
-  font-family: inter;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: "Inter", sans-serif;
 }
 
 code {

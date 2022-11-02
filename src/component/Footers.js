@@ -18,14 +18,19 @@ function Footers() {
       name: "github",
       src: Github,
       github_name: "",
-      link: "#",
+      link: "https://github.com/FelixAwoyale",
     },
   ];
   return (
     <div className="footer-area">
       <div className="slack-git">
         {Link.map((data) => (
-          <a href={data.link} target="_blank" rel="noreferrer">
+          <a
+            href={data.link}
+            target="_blank"
+            rel="noreferrer"
+            style={{ marginLeft: "10px" }}
+          >
             <img src={data.src} alt={data.name} />
           </a>
         ))}

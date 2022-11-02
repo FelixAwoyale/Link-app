@@ -1,7 +1,8 @@
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .link-box {
@@ -16,6 +17,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+a:hover {
+  color: black !important;
 }
 
 .link-box:hover {
@@ -84,11 +89,38 @@
   align-items: center;
 }
 
+.App {
+  padding-top: 20px;
+}
+
 .share-icon {
   float: right;
-  border: 1px solid gray;
+  border: 1px dashed #d0d5dd;
   padding: 10px;
   border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.copied {
+  background: #eaecf0;
+  border-radius: 100px;
+  margin-top: 50px;
+  padding: 3%;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.share-icon:hover {
+  background: #f2f4f7;
 }
 
 @media screen and (max-width: 768px) {
