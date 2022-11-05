@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Links() {
-  const Link = [
+  const Links = [
     {
       id: 1,
       Title: "Twitter Link",
@@ -42,7 +43,7 @@ export default function Links() {
   return (
     <div className="Link-section">
       <div>
-        {Link.map((data) => (
+        {Links.map((data) => (
           <a
             href={data.link}
             className="links"
@@ -55,6 +56,11 @@ export default function Links() {
             </div>
           </a>
         ))}
+        <Link to="/contact" className="links" target="_blank" rel="noreferrer">
+          <div id="contact" className="link-box">
+            <h6>Contact Me</h6>
+          </div>
+        </Link>
       </div>
     </div>
   );
